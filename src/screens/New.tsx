@@ -27,7 +27,7 @@ async function handlePoolCreate(){
   try {
     setIsloading(true);
 
-    await api.post('/pools', { title })
+    await api.post('/pools', { title: title })
 
     toast.show({
       title: 'Bolão criado com sucesso',
